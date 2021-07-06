@@ -1,10 +1,18 @@
 import logo from './logo.svg';
 import { Switch, NavLink, Link, Route } from 'react-router-dom';
 import "./App.scss";
+import React, {useState} from 'react';
+import { managerData, yearLabels } from "./data";
+
 
 import {LineGraph} from 'components/index'
 
 function App() {
+
+  const [state, setState] = useState({
+    data: managerData,
+    labels: yearLabels,
+  })
   return (
     <>
 
@@ -27,7 +35,7 @@ function App() {
         <div className="test">Hello</div>
       </div> */}
 
-      <LineGraph/>
+      <LineGraph data={state.data} labels={state.labels}/>
     </>
   );
 }

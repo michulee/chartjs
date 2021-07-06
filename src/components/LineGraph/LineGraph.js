@@ -1,6 +1,6 @@
 import "./_LineGraph.scss";
 
-export default function LineGraph() {
+export default function LineGraph(props) {
   return (
     <>
       <div className={"test"}>
