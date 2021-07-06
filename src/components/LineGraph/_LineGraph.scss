@@ -1,3 +1,5 @@
+@use "util/helpers" as *;
+
 .test {
-    background-color: salmon;
+    background-color: $color-test1;
 }
