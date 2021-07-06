@@ -1,0 +1,8 @@
+// https://www.liquidlight.co.uk/blog/use-and-import-rules-in-scss/
+
+// @use "util/helpers";
+@use "util/helpers" as *;
+
+.test {
+    color: $color-test1;
+}
